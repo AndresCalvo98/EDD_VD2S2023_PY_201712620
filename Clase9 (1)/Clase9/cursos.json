@@ -1,0 +1,49 @@
+{
+    "Cursos":[
+        {
+            "Codigo": "0770",
+            "Nombre": "Introduccion a la programacion y computacion 1"
+        },
+        {
+            "Codigo": "0771",
+            "Nombre": "Introduccion a la programacion y computacion 2"
+        },
+        {
+            "Codigo": "0772",
+            "Nombre": "Estructura de Datos"
+        },
+        {
+            "Codigo": "0773",
+            "Nombre": "Manejo e Implementacion de Archivos"
+        },
+        {
+            "Codigo": "0774",
+            "Nombre": "Sistemas de Bases de Datos 1"
+        },
+        {
+            "Codigo": "0775",
+            "Nombre": "Sistemas de Bases de Datos 2"
+        },
+        {
+            "Codigo": "0777",
+            "Nombre": "Organizacion de Lenguajes y Compiladores 1"
+        },
+        {
+            "Codigo": "0781",
+            "Nombre": "Organizacion de Lenguajes y Compiladores 2"
+        },
+        {
+            "Codigo": "0796",
+            "Nombre": "Lenguajes Formales y de Programacion"
+        },
+        {
+            "Codigo": "0964",
+            "Nombre": "Organizacion Computacional"
+        },
+        {
+            "Codigo": "0778",
+            "Nombre": "Organizacion de Lenguajes y Compiladores 1"
+        }
+
+    ]
+}

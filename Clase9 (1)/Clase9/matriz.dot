@@ -1,0 +1,20 @@
+digraph MatrizCapa{ 
+ node[shape=box] 
+ rankdir=UD; 
+ {rank=min; 
+nodo00[label="0" ,rankdir=LR,group=0]; 
+nodo10[label="202106003" ,rankdir=LR,group=1]; 
+}{rank=same; 
+nodo01[label="202110553" ,group=0]; 
+nodo11[label="0771" ,group=1]; 
+}nodo00 -> nodo10 [dir=both];
+nodo01 -> nodo11 [dir=both];
+nodo00 -> nodo01 [dir=both];
+nodo10 -> nodo11 [dir=both];
+}> nodo20 [dir=both];
+nodo01 -> nodo11 [dir=both];
+nodo11 -> nodo21 [dir=both];
+nodo00 -> nodo01 [dir=both];
+nodo10 -> nodo11 [dir=both];
+nodo20 -> nodo21 [dir=both];
+}
