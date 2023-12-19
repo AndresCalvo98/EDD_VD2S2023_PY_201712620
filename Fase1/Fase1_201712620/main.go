@@ -1,10 +1,10 @@
 package main
 
 import (
-	"Clase9/estructuras/ArbolAVL"
-	"Clase9/estructuras/ColaPrioridad"
-	"Clase9/estructuras/Listas"
-	"Clase9/estructuras/MatrizDispersa"
+	"Fase1_201712620/estructuras/ArbolAVL"
+	"Fase1_201712620/estructuras/ColaPrioridad"
+	"Fase1_201712620/estructuras/Listas"
+	"Fase1_201712620/estructuras/MatrizDispersa"
 	"fmt"
 	"strconv"
 )
@@ -95,7 +95,7 @@ func Reportes() {
 		fmt.Print("\033[H\033[2J")
 		fmt.Println("1. Reporte de Alumnos")
 		fmt.Println("2. Reporte de Tutores aceptados")
-		fmt.Println("3. Reporte de asignaciones") 
+		fmt.Println("3. Reporte de asignaciones")
 		fmt.Println("4. Reporte de Cursos")
 		fmt.Println("5. Salir")
 		fmt.Scanln(&opcion)
@@ -183,41 +183,40 @@ func CargaEstudiantes() {
 }
 
 func ControlEstudiantes() {
-    opcion := 0
-    salir := false
+	opcion := 0
+	salir := false
 
-    for !salir {
-        fmt.Print("\033[H\033[2J")
-        colaPrioridad.Primero_Cola()
-        fmt.Println("════════════════════")
-        fmt.Println("1. Aceptar")
-        fmt.Println("2. Rechazar")
-        fmt.Println("3. Salir")
-        fmt.Scanln(&opcion)
-        if opcion == 1 {
-            curso := colaPrioridad.Primero.Tutor.Curso
-            tutorCarnet := colaPrioridad.Primero.Tutor.Carnet
-            tutorNombre := colaPrioridad.Primero.Tutor.Nombre
-            tutorNota := colaPrioridad.Primero.Tutor.Nota
+	for !salir {
+		fmt.Print("\033[H\033[2J")
+		colaPrioridad.Primero_Cola()
+		fmt.Println("════════════════════")
+		fmt.Println("1. Aceptar")
+		fmt.Println("2. Rechazar")
+		fmt.Println("3. Salir")
+		fmt.Scanln(&opcion)
+		if opcion == 1 {
+			curso := colaPrioridad.Primero.Tutor.Curso
+			tutorCarnet := colaPrioridad.Primero.Tutor.Carnet
+			tutorNombre := colaPrioridad.Primero.Tutor.Nombre
+			tutorNota := colaPrioridad.Primero.Tutor.Nota
 
-            if tutorExistente := listaDobleCircular.BuscarTutor(curso); tutorExistente != nil {
-                if tutorExistente.Tutor.Nota < tutorNota {
-                    listaDobleCircular.SustituirTutor(tutorCarnet, tutorNombre, curso, tutorNota)
-                }
-            } else {
-                listaDobleCircular.Agregar(tutorCarnet, tutorNombre, curso, tutorNota)
-                colaPrioridad.Descolar()
-            }
-        } else if opcion == 2 {
-            colaPrioridad.Descolar()
-        } else if opcion == 3 {
-            salir = true
-        } else {
-            fmt.Println("Opcion invalida")
-        }
-    }
+			if tutorExistente := listaDobleCircular.BuscarTutor(curso); tutorExistente != nil {
+				if tutorExistente.Tutor.Nota < tutorNota {
+					listaDobleCircular.SustituirTutor(tutorCarnet, tutorNombre, curso, tutorNota)
+				}
+			} else {
+				listaDobleCircular.Agregar(tutorCarnet, tutorNombre, curso, tutorNota)
+				colaPrioridad.Descolar()
+			}
+		} else if opcion == 2 {
+			colaPrioridad.Descolar()
+		} else if opcion == 3 {
+			salir = true
+		} else {
+			fmt.Println("Opcion invalida")
+		}
+	}
 }
-
 
 func CargaCursos() {
 	fmt.Print("\033[H\033[2J")
@@ -228,17 +227,16 @@ func CargaCursos() {
 	fmt.Println("Se cargaron los cursos")
 }
 
-
 //Comprobar Existencia de tutor
-			/*
-				if comprobar == true { //Significa que el curso ya tiene 1 tutor
-					if comprobarNotas == true { //Comprobar que alumno tiene mejor nota
-						SustituirTutor()
-					}
-				}else{
-					listaDobleCircular.Agregar(colaPrioridad.Primero.Tutor.Carnet, colaPrioridad.Primero.Tutor.Nombre, colaPrioridad.Primero.Tutor.Curso, colaPrioridad.Primero.Tutor.Nota)
-				}
-			*/
+/*
+	if comprobar == true { //Significa que el curso ya tiene 1 tutor
+		if comprobarNotas == true { //Comprobar que alumno tiene mejor nota
+			SustituirTutor()
+		}
+	}else{
+		listaDobleCircular.Agregar(colaPrioridad.Primero.Tutor.Carnet, colaPrioridad.Primero.Tutor.Nombre, colaPrioridad.Primero.Tutor.Curso, colaPrioridad.Primero.Tutor.Nota)
+	}
+*/
 
-			//listaDobleCircular.Agregar(colaPrioridad.Primero.Tutor.Carnet, colaPrioridad.Primero.Tutor.Nombre, colaPrioridad.Primero.Tutor.Curso, colaPrioridad.Primero.Tutor.Nota)
-			//colaPrioridad.Descolar()
+//listaDobleCircular.Agregar(colaPrioridad.Primero.Tutor.Carnet, colaPrioridad.Primero.Tutor.Nombre, colaPrioridad.Primero.Tutor.Curso, colaPrioridad.Primero.Tutor.Nota)
+//colaPrioridad.Descolar()

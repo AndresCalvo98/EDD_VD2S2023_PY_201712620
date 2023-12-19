@@ -1,13 +1,12 @@
 package ArbolAVL
 
 import (
+	"Fase1_201712620/estructuras/GenerarArchivos"
 	"encoding/json"
 	"log"
 	"math"
 	"os"
 	"strconv"
-	"Clase9/estructuras/GenerarArchivos"
-
 )
 
 type ArbolAVL struct {
@@ -146,17 +145,17 @@ func (a *ArbolAVL) LeerJson(ruta string) {
 }
 
 func (a *ArbolAVL) Graficar() {
-    cadena := ""
-    nombre_archivo := "./ArbolAVL.dot"
-    nombre_imagen := "ArbolAVL.jpg"
-    if a.Raiz != nil {
-        cadena += "digraph arbol{ "
-        cadena += a.retornarValoresArbol(a.Raiz, 0)
-        cadena += "}"
-    }
-    GenerarArchivos.CrearArchivo(nombre_archivo)
-    GenerarArchivos.EscribirArchivo(cadena, nombre_archivo)
-    GenerarArchivos.Ejecutar(nombre_imagen, nombre_archivo)
+	cadena := ""
+	nombre_archivo := "./ArbolAVL.dot"
+	nombre_imagen := "ArbolAVL.jpg"
+	if a.Raiz != nil {
+		cadena += "digraph arbol{ "
+		cadena += a.retornarValoresArbol(a.Raiz, 0)
+		cadena += "}"
+	}
+	GenerarArchivos.CrearArchivo(nombre_archivo)
+	GenerarArchivos.EscribirArchivo(cadena, nombre_archivo)
+	GenerarArchivos.Ejecutar(nombre_imagen, nombre_archivo)
 }
 
 func (a *ArbolAVL) retornarValoresArbol(raiz *NodoArbol, indice int) string {

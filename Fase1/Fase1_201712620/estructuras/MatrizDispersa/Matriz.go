@@ -1,7 +1,7 @@
 package MatrizDispersa
 
 import (
-	"Clase9/estructuras/GenerarArchivos"
+	"Fase1_201712620/estructuras/GenerarArchivos"
 	"fmt"
 	"strconv"
 )

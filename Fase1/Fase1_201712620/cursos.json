@@ -37,12 +37,20 @@
             "Nombre": "Lenguajes Formales y de Programacion"
         },
         {
+            "Codigo": "0001",
+            "Nombre": "Organizacionsasdads "
+        },
+        {
             "Codigo": "0964",
             "Nombre": "Organizacion Computacional"
         },
         {
             "Codigo": "0778",
             "Nombre": "Organizacion de Lenguajes y Compiladores 1"
+        },
+        {
+            "Codigo": "0779",
+            "Nombre": "Organizacion de Lenguajes y Compiladores 2"
         }
     ]
 }
