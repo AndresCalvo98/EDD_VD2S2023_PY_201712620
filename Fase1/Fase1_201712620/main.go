@@ -44,7 +44,7 @@ func MenuLogin() {
 	fmt.Print("Password: ")
 	fmt.Scanln(&password)
 
-	if usuario == "a" && password == "a" {
+	if usuario == "Admin_201712620" && password == "admin" {
 		fmt.Println("Administrador Inicio Sesion")
 		MenuAdmin()
 	} else if listaDoble.Buscar(usuario, password) {
