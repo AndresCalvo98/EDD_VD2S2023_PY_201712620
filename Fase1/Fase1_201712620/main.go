@@ -44,7 +44,7 @@ func MenuLogin() {
 	fmt.Print("Password: ")
 	fmt.Scanln(&password)
 
-	if usuario == "Admin_201712620" && password == "admin" {
+	if usuario == "ADMIN_201712620" && password == "Admin" {
 		fmt.Println("Administrador Inicio Sesion")
 		MenuAdmin()
 	} else if listaDoble.Buscar(usuario, password) {
@@ -101,9 +101,12 @@ func Reportes() {
 		fmt.Scanln(&opcion)
 		switch opcion {
 		case 1:
-			fmt.Println("Reporte 1")
+			//listaDoble.Reporte("Estudiantes.jpg")
+			//fmt.Println("si esta entrando")
+			listaDoble.Reporte()
 		case 2:
-			fmt.Println("Reporte 1")
+			listaDobleCircular.Reportev2()
+			//Println("Reporte 2")
 		case 3:
 			matrizDispersa.Reporte("Matriz.jpg")
 		case 4:
