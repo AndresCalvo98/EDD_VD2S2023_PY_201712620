@@ -104,9 +104,9 @@ func (l *ListaDobleCircular) SustituirTutor(carnet int, nombre string, curso str
 	aux := l.Inicio
 	contador := 1
 	for l.Longitud >= contador {
-		if aux.Tutor.Carnet == carnet {
+		if aux.Tutor.Curso == curso {
 			aux.Tutor.Nombre = nombre
-			aux.Tutor.Curso = curso
+			aux.Tutor.Carnet = carnet
 			aux.Tutor.Nota = nota
 			return
 		}

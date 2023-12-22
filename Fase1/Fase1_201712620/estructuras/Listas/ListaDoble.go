@@ -100,6 +100,7 @@ func (l *ListaDoble) Reporte() {
 	texto += "nodonull1->nodo0 [dir=back];\n"
 	for i := 0; i < l.Longitud; i++ {
 		texto += "nodo" + strconv.Itoa(i) + "[label=\"" + strconv.Itoa(aux.Alumno.Carnet) + " " + aux.Alumno.Nombre + "\"];\n"
+		aux = aux.Siguiente
 	}
 	for i := 0; i < l.Longitud-1; i++ {
 		c := i + 1

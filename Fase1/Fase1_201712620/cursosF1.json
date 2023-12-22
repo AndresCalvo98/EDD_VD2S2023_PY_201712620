@@ -1,0 +1,67 @@
+{
+    "Cursos": [
+        {
+            "Codigo": "0770",
+            "Nombre": "Introduccion a la programacion y computacion 2"
+        },
+        {
+            "Codigo": "0771",
+            "Nombre": "Introduccion a la programacion y computacion 2"
+        },
+        {
+            "Codigo": "0772",
+            "Nombre": "Estructuras de datos"
+        },
+        {
+            "Codigo": "0775",
+            "Nombre": "Sistemas de Bases de Datos 2"
+        },
+        {
+            "Codigo": "0781",
+            "Nombre": "Organizacion de Lenguajes y Compiladores 1"
+        },
+        {
+            "Codigo": "0281",
+            "Nombre": "Sistemas Operativos 1"
+        },
+        {
+            "Codigo": "0285",
+            "Nombre": "Sistemas Operativos 2"
+        },
+        {
+            "Codigo": "0972",
+            "Nombre": "Inteligencia Artificial 1"
+        },
+        {
+            "Codigo": "0785",
+            "Nombre": "Analisis y Diseño de Sistemas 2"
+        },
+        {
+            "Codigo": "0729",
+            "Nombre": "Modelacion y Simulacion 1"
+        },
+        {
+            "Codigo": "0724",
+            "Nombre": "Teoria de Sistemas 2"
+        },
+        {
+            "Codigo": "0970",
+            "Nombre": "Redes de Computadoras 1"
+        },
+        {
+            "Codigo": "0973",
+            "Nombre": "agregado"
+        }
+        ,
+        {
+            "Codigo": "0975",
+            "Nombre": "agre"
+        }
+        ,
+        {
+            "Codigo": "0978",
+            "Nombre": "agrega"
+        }
+
+    ]
+}

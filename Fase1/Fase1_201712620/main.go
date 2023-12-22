@@ -193,11 +193,13 @@ func ControlEstudiantes() {
 		fmt.Print("\033[H\033[2J")
 		colaPrioridad.Primero_Cola()
 		fmt.Println("════════════════════")
-		fmt.Println("1. Aceptar")
+		if colaPrioridad.Primero != nil {
+			fmt.Println("1. Aceptar")
+		}
 		fmt.Println("2. Rechazar")
 		fmt.Println("3. Salir")
 		fmt.Scanln(&opcion)
-		if opcion == 1 {
+		if opcion == 1 && colaPrioridad.Primero != nil {
 			curso := colaPrioridad.Primero.Tutor.Curso
 			tutorCarnet := colaPrioridad.Primero.Tutor.Carnet
 			tutorNombre := colaPrioridad.Primero.Tutor.Nombre
@@ -206,10 +208,20 @@ func ControlEstudiantes() {
 			if tutorExistente := listaDobleCircular.BuscarTutor(curso); tutorExistente != nil {
 				if tutorExistente.Tutor.Nota < tutorNota {
 					listaDobleCircular.SustituirTutor(tutorCarnet, tutorNombre, curso, tutorNota)
+					fmt.Println("Se sustituyo al tutor de curso actual")
+					fmt.Print("Presiona Enter para continuar...")
+					fmt.Scanln()
+					colaPrioridad.Descolar()
+					listaDobleCircular.Reportev2()
+				} else {
+					fmt.Println("Se rechazo al tutor de curso actual")
+					colaPrioridad.Descolar()
 				}
 			} else {
 				listaDobleCircular.Agregar(tutorCarnet, tutorNombre, curso, tutorNota)
 				colaPrioridad.Descolar()
+				fmt.Println("Se registro tutor con exito")
+				listaDobleCircular.Reportev2()
 			}
 		} else if opcion == 2 {
 			colaPrioridad.Descolar()

@@ -99,6 +99,9 @@ func (a *ArbolAVL) insertarNodo(raiz *NodoArbol, nuevoNodo *NodoArbol) *NodoArbo
 }
 
 func (a *ArbolAVL) InsertarElemento(valor string) {
+	if a.Busqueda(valor) {
+		return
+	}
 	nuevoNodo := &NodoArbol{Valor: valor}
 	a.Raiz = a.insertarNodo(a.Raiz, nuevoNodo)
 }

@@ -34,15 +34,26 @@ func (c *Cola) Encolar(carnet int, nombre string, curso string, nota int) {
 		c.Longitud++
 	} else {
 		aux := c.Primero
+		if c.Longitud == 1 && aux.Prioridad > nuevoNodo.Prioridad {
+			nuevoNodo.Siguiente = aux
+			c.Primero = nuevoNodo
+			c.Longitud++
+			return
+		}
 		for aux.Siguiente != nil {
-			if aux.Siguiente.Prioridad > nuevoNodo.Prioridad && aux.Prioridad == nuevoNodo.Prioridad {
+			if aux.Siguiente.Prioridad > nuevoNodo.Prioridad && (aux.Prioridad == nuevoNodo.Prioridad || aux.Prioridad < nuevoNodo.Prioridad) {
 				nuevoNodo.Siguiente = aux.Siguiente
 				aux.Siguiente = nuevoNodo
 				c.Longitud++
 				return
-			} else if aux.Siguiente.Prioridad > nuevoNodo.Prioridad && aux.Prioridad < nuevoNodo.Prioridad {
+			} else if aux.Prioridad > nuevoNodo.Prioridad {
+				nuevoNodo.Tutor = aux.Tutor
+				NuevaPrioridad := nuevoNodo.Prioridad
+				nuevoNodo.Prioridad = aux.Prioridad
 				nuevoNodo.Siguiente = aux.Siguiente
 				aux.Siguiente = nuevoNodo
+				aux.Tutor = nuevoTutor
+				aux.Prioridad = NuevaPrioridad
 				c.Longitud++
 				return
 			} else {
@@ -53,7 +64,6 @@ func (c *Cola) Encolar(carnet int, nombre string, curso string, nota int) {
 		c.Longitud++
 	}
 }
-
 func (c *Cola) Descolar() {
 	if c.Longitud == 0 {
 		fmt.Println("No hay tutores en la cola")

@@ -1,6 +1,0 @@
-digraph MatrizCapa{ 
- node[shape=box] 
- rankdir=UD; 
- {rank=min; 
-nodo00[label="0" ,rankdir=LR,group=0]; 
-}}
