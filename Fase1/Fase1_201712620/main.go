@@ -62,21 +62,18 @@ func MenuAdmin() {
 		fmt.Print("\033[H\033[2J")
 		fmt.Println("1. Carga de Estudiantes Tutores")
 		fmt.Println("2. Carga de Estudiantes")
-		fmt.Println("3. Cargar de Cursos") //Falta
+		fmt.Println("3. Cargar de Cursos")
 		fmt.Println("4. Control de Estudiantes")
-		fmt.Println("5. Reportes") //Falta
+		fmt.Println("5. Reportes")
 		fmt.Println("6. Salir")
 		fmt.Scanln(&opcion)
 		switch opcion {
 		case 1:
 			CargaTutores()
-			//colaPrioridad.LeerCSV("Tutores.csv")
 		case 2:
 			CargaEstudiantes()
-			//listaDoble.LeerCSV("Estudiante.csv")
 		case 3:
 			CargaCursos()
-			//arbolCursos.LeerJson("archivo.json")
 		case 4:
 			ControlEstudiantes()
 		case 5:
@@ -101,12 +98,9 @@ func Reportes() {
 		fmt.Scanln(&opcion)
 		switch opcion {
 		case 1:
-			//listaDoble.Reporte("Estudiantes.jpg")
-			//fmt.Println("si esta entrando")
 			listaDoble.Reporte()
 		case 2:
 			listaDobleCircular.Reportev2()
-			//Println("Reporte 2")
 		case 3:
 			matrizDispersa.Reporte("Matriz.jpg")
 		case 4:
@@ -144,7 +138,6 @@ func AsignarCurso() {
 	for !salir {
 		fmt.Println("Teclee el codigo del curso: ")
 		fmt.Scanln(&opcion)
-		//Iria el primer If del Arbol (pendiente)
 		if arbolCursos.Busqueda(opcion) {
 			if listaDobleCircular.Buscar(opcion) {
 				TutorBuscado := listaDobleCircular.BuscarTutor(opcion)
@@ -208,8 +201,8 @@ func ControlEstudiantes() {
 			if tutorExistente := listaDobleCircular.BuscarTutor(curso); tutorExistente != nil {
 				if tutorExistente.Tutor.Nota < tutorNota {
 					listaDobleCircular.SustituirTutor(tutorCarnet, tutorNombre, curso, tutorNota)
-					fmt.Println("Se sustituyo al tutor de curso actual")
-					fmt.Print("Presiona Enter para continuar...")
+					fmt.Println("Se acepto al tutor de curso actual")
+
 					fmt.Scanln()
 					colaPrioridad.Descolar()
 					listaDobleCircular.Reportev2()
@@ -241,17 +234,3 @@ func CargaCursos() {
 	arbolCursos.LeerJson(ruta)
 	fmt.Println("Se cargaron los cursos")
 }
-
-//Comprobar Existencia de tutor
-/*
-	if comprobar == true { //Significa que el curso ya tiene 1 tutor
-		if comprobarNotas == true { //Comprobar que alumno tiene mejor nota
-			SustituirTutor()
-		}
-	}else{
-		listaDobleCircular.Agregar(colaPrioridad.Primero.Tutor.Carnet, colaPrioridad.Primero.Tutor.Nombre, colaPrioridad.Primero.Tutor.Curso, colaPrioridad.Primero.Tutor.Nota)
-	}
-*/
-
-//listaDobleCircular.Agregar(colaPrioridad.Primero.Tutor.Carnet, colaPrioridad.Primero.Tutor.Nombre, colaPrioridad.Primero.Tutor.Curso, colaPrioridad.Primero.Tutor.Nota)
-//colaPrioridad.Descolar()
