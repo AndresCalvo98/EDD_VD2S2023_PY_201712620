@@ -23,9 +23,9 @@ func main() {
 	for !salir {
 		fmt.Print("\033[H\033[2J")
 		fmt.Println("______________________Pagina de Inicio______________________")
-		fmt.Println("1. Inicio de Sesion")
-		fmt.Println("2. Salir")
-		fmt.Println("_____________________________________________________________")
+		fmt.Println("|1. Inicio de Sesion                                       |")
+		fmt.Println("|2. Salir                                                  |")
+		fmt.Println("|__________________________________________________________|")
 
 		fmt.Scanln(&opcion)
 		switch opcion {
@@ -62,12 +62,14 @@ func MenuAdmin() {
 	salir := false
 	for !salir {
 		fmt.Print("\033[H\033[2J")
-		fmt.Println("1. Carga de Estudiantes Tutores")
-		fmt.Println("2. Carga de Estudiantes")
-		fmt.Println("3. Cargar de Cursos")
-		fmt.Println("4. Control de Estudiantes")
-		fmt.Println("5. Reportes")
-		fmt.Println("6. Salir")
+		fmt.Println("__________________Menu de Administrador__________________")
+		fmt.Println("|1. Carga de Estudiantes Tutores                        |")
+		fmt.Println("|2. Carga de Estudiantes                                |")
+		fmt.Println("|3. Cargar de Cursos                                    |")
+		fmt.Println("|4. Control de Estudiantes                              |")
+		fmt.Println("|5. Reportes                                            |")
+		fmt.Println("|6. Salir                                               |")
+		fmt.Println("|_______________________________________________________|")
 		fmt.Scanln(&opcion)
 		switch opcion {
 		case 1:
@@ -92,11 +94,13 @@ func Reportes() {
 	salir := false
 	for !salir {
 		fmt.Print("\033[H\033[2J")
-		fmt.Println("1. Reporte de Alumnos")
-		fmt.Println("2. Reporte de Tutores aceptados")
-		fmt.Println("3. Reporte de asignaciones")
-		fmt.Println("4. Reporte de Cursos")
-		fmt.Println("5. Salir")
+		fmt.Println("__________________Menu de Reportes__________________")
+		fmt.Println("|1. Reporte de Alumnos                             |")
+		fmt.Println("|2. Reporte de Tutores aceptados                   |")
+		fmt.Println("|3. Reporte de asignaciones                        |")
+		fmt.Println("|4. Reporte de Cursos                              |")
+		fmt.Println("|5. Salir                                          |")
+		fmt.Println("|__________________________________________________|")
 		fmt.Scanln(&opcion)
 		switch opcion {
 		case 1:
@@ -118,9 +122,11 @@ func MenuEstudiantes() {
 	opcion := 0
 	salir := false
 	for !salir {
-		fmt.Println("1. Ver Tutores Disponibles")
-		fmt.Println("2. Asignarse Tutores")
-		fmt.Println("3. Salir")
+		fmt.Println("__________________Menu de Estudiantes__________________")
+		fmt.Println("|1. Ver Tutores Disponibles                           |")
+		fmt.Println("|2. Asignarse Tutores                                 |")
+		fmt.Println("|3. Salir                                             |")
+		fmt.Println("|______________________________________________________")
 		fmt.Scanln(&opcion)
 		switch opcion {
 		case 1:
@@ -148,7 +154,7 @@ func AsignarCurso() {
 					break
 				}
 				matrizDispersa.Insertar_Elemento(estudiante, TutorBuscado.Tutor.Carnet, opcion)
-				matrizDispersa.Reporte("Matriz.jpg")
+				//matrizDispersa.Reporte("Matriz.jpg")
 				break
 			} else {
 				fmt.Println("No hay tutores para ese curso....")
@@ -165,7 +171,7 @@ func AsignarCurso() {
 func CargaTutores() {
 	fmt.Print("\033[H\033[2J")
 	ruta := ""
-	fmt.Print("Nombre de Archivo: ")
+	fmt.Print("Ingrese el Nombre de Archivo: ")
 	fmt.Scanln(&ruta)
 	colaPrioridad.LeerCSV(ruta)
 	fmt.Println("Se cargo a la Cola los tutores")
@@ -174,7 +180,7 @@ func CargaTutores() {
 func CargaEstudiantes() {
 	fmt.Print("\033[H\033[2J")
 	ruta := ""
-	fmt.Print("Nombre de Archivo: ")
+	fmt.Print("Ingrese el Nombre de Archivo: ")
 	fmt.Scanln(&ruta)
 	listaDoble.LeerCSV(ruta)
 	fmt.Println("Se cargo los estudiantes")
@@ -203,11 +209,10 @@ func ControlEstudiantes() {
 			if tutorExistente := listaDobleCircular.BuscarTutor(curso); tutorExistente != nil {
 				if tutorExistente.Tutor.Nota < tutorNota {
 					listaDobleCircular.SustituirTutor(tutorCarnet, tutorNombre, curso, tutorNota)
-					fmt.Println("Se acepto al tutor de curso actual")
 
 					fmt.Scanln()
 					colaPrioridad.Descolar()
-					listaDobleCircular.Reportev2()
+					//listaDobleCircular.Reportev2()
 				} else {
 					fmt.Println("Se rechazo al tutor de curso actual")
 					colaPrioridad.Descolar()
@@ -216,7 +221,7 @@ func ControlEstudiantes() {
 				listaDobleCircular.Agregar(tutorCarnet, tutorNombre, curso, tutorNota)
 				colaPrioridad.Descolar()
 				fmt.Println("Se registro tutor con exito")
-				listaDobleCircular.Reportev2()
+				//listaDobleCircular.Reportev2()
 			}
 		} else if opcion == 2 {
 			colaPrioridad.Descolar()
@@ -231,8 +236,8 @@ func ControlEstudiantes() {
 func CargaCursos() {
 	fmt.Print("\033[H\033[2J")
 	ruta := ""
-	fmt.Print("Nombre de Archivo: ")
+	fmt.Print("Ingrese el Nombre de Archivo: ")
 	fmt.Scanln(&ruta)
 	arbolCursos.LeerJson(ruta)
-	fmt.Println("Se cargaron los cursos")
+	fmt.Println("Se cargaron los cursos con exito")
 }
