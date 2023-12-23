@@ -11,6 +11,105 @@
 
 > Nombre
 > - Luis Andres Calvo Arreaga         201712620
+
+# Manual de Usuario
+## Esta es la **pagina de Inicio de sesion** en la cual tendremos 2 opciones: 
+**1. Iniciar Sesion**
+
+**2. Salir del programa**
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/a5e1ca94-7140-4e97-bc53-5c3ab25e8d97)
+
+## En este programa podremos ingresar de 2 formas;
+
+**1. Administrador:** se ingresa con un **Usuario** y **Contraseña** especifica para el Administrador.
+
+**Usuario: ADMIN_201712620**
+
+**Contraseña: Admin**
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/7d67b7c9-0d0e-417a-bedc-df367ee3b878)
+
+
+**2. Estudiante:** basta con que el **Administrador** haya cargado un archivo de estudiantes (para que el estudiante pueda ingresar con su carne en el **Usuario** y **Contraseña**
+
+Ej. 
+**Usuario: 201712620**
+
+**Contraseña: 201712620**
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/c0ccf09d-8673-4b70-9974-45f6739b3523)
+
+## Pagina principal Administrador
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/1b51ee95-fe5f-4946-a5cc-508628c852bf)
+
+En esta parte contaremos con 6 **opciones**:
+
+
+**1. Carga de Tutores Académicos:** Mediante esta parte, el
+administrador podrá realizar una carga de estudiantes que necesiten servicio
+como tutores académicos que estarán el sistema, para este será en archivo con extensión .csv
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/fd412084-9431-46ae-8572-9d1e648660b6)
+
+
+**2. Carga de Estudiantes** Mediante esta parte, el administrador podrá realizar una carga de tutores  académicos con sus cursos y sus respectivas notas para aprobarlos o no y agregarlos en el sistema, para este será en archivo con extensión .csv
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/d130cf1b-af25-425f-afa2-a267113c052e)
+
+
+**3. Carga de Cursos:** El administrador tendrá una sección donde hará la carga de los cursos del área profesional, el archivo json.
+**4. Esta sección el administrador podrá gestionar a los estudiantes que
+desean ser parte del equipo de tutores, donde se evaluará aptitudes,
+calificaciones personales como auxiliares de curso en su historial.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/c1ecdc79-19ed-44b9-ba8b-c6a22c3cad8a)
+
+
+**4. Control de Estudiantes Tutores:** El administrador tendrá esta seccion donde se le despliegaran los tutores con su nombre, carne, nota y curso y el administrador ira aceptando o rechazando a los tutores con **1** y **2**.
+tambien nos muestra un poco de la informacion del siguiente tutor.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/8a5f50ef-bf13-4a1b-a4d0-30f8fda90261)
+
+**5. Reportes:** Despliega un nuevo menu para mostrar los distintos tipos de reportes que hay.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/59e583c8-4933-4459-8c9e-effdb3fe5b83)
+
+
+**6. Salir:** esta opcion sale del login que tuvo con el Administrador y nos redirige a la pagina de iniciar sesion.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/bbbed7b6-4b0a-463b-9a0b-3d493125cf04)
+
+## Menu Reportes 
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/eced4f9e-0084-4ff1-8ea1-a767c27ab6c2)
+
+**1. Reporte de Alumnos:** Despliega una JPG de un grafo de la **lista enlazada simple** que se creo de la carga del archivo de **estudiantes**.
+
+**2. Reporte de Tutores Aceptados:** Despliega una JPG de un grafo de la **lista enlazada circular** que se creo de la carga del archivo de **Tutores**.
+
+**3. Reporte Asignaciones:** Despliega una JPG  de un grafo de la **matriz dispersa** que se creo de la asignacion de tutores a los cursos y de la asignacion de Estudiantes a dichos cursos.
+
+**4. Reporte de Cursos:** Despliega una JPG de un grafo del **Arbol AVL** que se creo de la carga del archivo de **Tutores**.
+
+**5. Salir:** Nos Redirige a la **pagina principal** de **administrador**
+
+## Menu Ingreso como Estudiante
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/73efe071-ecea-41f3-ae36-4b5fef6d0a41)
+
+**1. Ver Tutores Disponibles:** Este nos despliegara la lista de cursos que tiene a sus respectivos Tutores.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/856ff7ee-431e-4194-8b27-6d7c30847090)
+
+**2. Asignarse Tutores:** Esta opcion nos pedira que ingresemos el codigo del curso al cual queremos asignarnos.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/9d534500-101f-496a-8bcf-0f3157c821b7)
+
+**2. Salir:** Nos redirige a la pagina de **Iniciar Sesion**.
+
+
+
 # Manual Tecnico
 
 La siguiente aplicacion fue creada en lenguaje Golang. Esta se divide en varios segmentos, y comenzaremos visualizando la clase main que es en el cual esta todo el nucleo del proyecto.
