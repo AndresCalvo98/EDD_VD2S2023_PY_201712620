@@ -25,6 +25,8 @@ func main() {
 		fmt.Println("______________________Pagina de Inicio______________________")
 		fmt.Println("1. Inicio de Sesion")
 		fmt.Println("2. Salir")
+		fmt.Println("_____________________________________________________________")
+
 		fmt.Scanln(&opcion)
 		switch opcion {
 		case 1:
