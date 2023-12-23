@@ -16,11 +16,13 @@
 La siguiente aplicacion fue creada en lenguaje Golang. Esta se divide en varios segmentos, y comenzaremos visualizando la clase main que es en el cual esta todo el nucleo del proyecto.
 ### go.mod
 
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/1101d23a-5105-4080-b991-894170f3c9f7)
+
+
 Antes de iniciar nuestro proyecto es necesario crear un archivo go.mod para definir y gestionar las dependencias del proyecto. Este archivo es parte de la introducción de Go Modules, un sistema de gestión de dependencias incorporado en Go a partir de la versión 1.11.
 Este se crea con el comando **go mod init Nombre**
 ### Main.go
 
-![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/1101d23a-5105-4080-b991-894170f3c9f7)
 
 **Descripción del Main:**
 
