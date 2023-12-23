@@ -36,31 +36,28 @@ func (a *ArbolAVL) equilibrio(raiz *NodoArbol) int {
 	if raiz == nil {
 		return 0
 	}
-	return (a.altura(raiz.Derecho) - a.altura(raiz.Izquierdo)) // 1 - 0
+	return (a.altura(raiz.Derecho) - a.altura(raiz.Izquierdo))
 }
 
-func (a *ArbolAVL) rotacionI(raiz *NodoArbol) *NodoArbol { //Raiz = 10
-	raiz_derecho := raiz.Derecho             // 10.derecho = 15
-	hijo_izquierdo := raiz_derecho.Izquierdo // 10.derecho.izquierdo = null
-	raiz_derecho.Izquierdo = raiz            // 15.izquierdo = 10
-	raiz.Derecho = hijo_izquierdo            // 10.derecho = null
-	/*Calcular nuevamente alturas de raiz*/
+func (a *ArbolAVL) rotacionI(raiz *NodoArbol) *NodoArbol {
+	raiz_derecho := raiz.Derecho
+	hijo_izquierdo := raiz_derecho.Izquierdo
+	raiz_derecho.Izquierdo = raiz
+	raiz.Derecho = hijo_izquierdo
 	numeroMax := math.Max(float64(a.altura(raiz.Izquierdo)), float64(a.altura(raiz.Derecho)))
 	raiz.Altura = 1 + int(numeroMax)
 	raiz.Factor_Equilibrio = a.equilibrio(raiz)
-	/*Calcular nuevamente alturas de raiz.derecho*/
 	numeroMax = math.Max(float64(a.altura(raiz_derecho.Izquierdo)), float64(a.altura(raiz_derecho.Derecho)))
 	raiz_derecho.Altura = 1 + int(numeroMax)
 	raiz_derecho.Factor_Equilibrio = a.equilibrio(raiz_derecho)
 	return raiz_derecho
 }
 
-func (a *ArbolAVL) rotacionD(raiz *NodoArbol) *NodoArbol { //Raiz = 20
-	raiz_izquierdo := raiz.Izquierdo       // 20.izquierdo = 15
-	hijo_derecho := raiz_izquierdo.Derecho // 20.izquierdo.derecho = null
-	raiz_izquierdo.Derecho = raiz          //15.derecho = 20
-	raiz.Izquierdo = hijo_derecho          // 20.izquierdo = null
-	/*Calcular nuevamente alturas de raiz.derecho*/
+func (a *ArbolAVL) rotacionD(raiz *NodoArbol) *NodoArbol {
+	raiz_izquierdo := raiz.Izquierdo
+	hijo_derecho := raiz_izquierdo.Derecho
+	raiz_izquierdo.Derecho = raiz
+	raiz.Izquierdo = hijo_derecho
 	numeroMax := math.Max(float64(a.altura(raiz.Izquierdo)), float64(a.altura(raiz.Derecho)))
 	raiz.Altura = 1 + int(numeroMax)
 	raiz.Factor_Equilibrio = a.equilibrio(raiz)
@@ -150,7 +147,7 @@ func (a *ArbolAVL) LeerJson(ruta string) {
 func (a *ArbolAVL) Graficar() {
 	cadena := ""
 	nombre_archivo := "./ArbolAVL.dot"
-	nombre_imagen := "ArbolAVL.jpg"
+	nombre_imagen := "Arbol AVL de cursos.jpg"
 	if a.Raiz != nil {
 		cadena += "digraph arbol{ "
 		cadena += a.retornarValoresArbol(a.Raiz, 0)

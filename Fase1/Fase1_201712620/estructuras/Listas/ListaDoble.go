@@ -89,7 +89,7 @@ func (l *ListaDoble) MostrarV1() {
 
 func (l *ListaDoble) Reporte() {
 	nombreArchivo := "./listadoble.dot"
-	nombreImagen := "./listadoble.jpg"
+	nombreImagen := "Lista de Estudiantes.jpg"
 	texto := "digraph lista{\n"
 	texto += "rankdir=LR;\n"
 	texto += "node[shape = record];\n"

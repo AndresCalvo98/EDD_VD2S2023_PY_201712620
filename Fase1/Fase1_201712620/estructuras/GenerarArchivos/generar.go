@@ -41,5 +41,4 @@ func Ejecutar(nombre_imagen string, archivo string) {
 	cmd, _ := exec.Command(path, "-Tjpg", archivo).Output()
 	mode := 0777
 	_ = os.WriteFile(nombre_imagen, cmd, os.FileMode(mode))
-	//dot lista.dot -Tjpg lista.jpg -o
 }

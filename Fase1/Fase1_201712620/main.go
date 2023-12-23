@@ -14,7 +14,6 @@ var listaDoble *Listas.ListaDoble = &Listas.ListaDoble{Inicio: nil, Longitud: 0}
 var colaPrioridad *ColaPrioridad.Cola = &ColaPrioridad.Cola{Primero: nil, Longitud: 0}
 var matrizDispersa *MatrizDispersa.Matriz = &MatrizDispersa.Matriz{Raiz: &MatrizDispersa.NodoMatriz{PosX: -1, PosY: -1, Dato: &MatrizDispersa.Dato{Carnet_Tutor: 0, Carnet_Estudiante: 0, Curso: "RAIZ"}}, Cantidad_Alumnos: 0, Cantidad_Tutores: 0}
 var arbolCursos *ArbolAVL.ArbolAVL = &ArbolAVL.ArbolAVL{Raiz: nil}
-
 var loggeado_estudiante string = ""
 
 func main() {
@@ -23,6 +22,7 @@ func main() {
 
 	for !salir {
 		fmt.Print("\033[H\033[2J")
+		fmt.Println("______________________Pagina de Inicio______________________")
 		fmt.Println("1. Inicio de Sesion")
 		fmt.Println("2. Salir")
 		fmt.Scanln(&opcion)
@@ -102,7 +102,7 @@ func Reportes() {
 		case 2:
 			listaDobleCircular.Reportev2()
 		case 3:
-			matrizDispersa.Reporte("Matriz.jpg")
+			matrizDispersa.Reporte("Asignaciones de Estudiantes.jpg")
 		case 4:
 			arbolCursos.Graficar()
 		case 5:

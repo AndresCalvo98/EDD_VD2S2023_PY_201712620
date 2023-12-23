@@ -117,7 +117,7 @@ func (l *ListaDobleCircular) SustituirTutor(carnet int, nombre string, curso str
 
 func (l *ListaDobleCircular) Reportev2() {
 	nombreArchivo := "./listadoblecircular.dot"
-	nombreImagen := "./listadoblecircular.jpg"
+	nombreImagen := "Lista de Tutores Academicos.jpg"
 	texto := "digraph lista{\n"
 	texto += "rankdir=LR;\n"
 	texto += "node[shape = record];\n"
