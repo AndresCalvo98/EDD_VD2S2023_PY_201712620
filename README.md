@@ -428,6 +428,7 @@ El archivo main.go contiene el programa principal de tu proyecto. Aquí, proporc
 #### listaEnlazada.go
 
 **Estructura NodoLista:**
+
 ![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/ea35aae5-98e3-41f9-bddf-fcaf8c58d227)
 
 
@@ -438,6 +439,7 @@ El archivo main.go contiene el programa principal de tu proyecto. Aquí, proporc
 **Siguiente:** Es un puntero al siguiente nodo en la lista.
 
 **Estructura ListaSimple:**
+
 ![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/d57f0bf7-7bd7-4535-ad61-746ce5761c51)
 
 
@@ -448,6 +450,7 @@ El archivo main.go contiene el programa principal de tu proyecto. Aquí, proporc
 **Longitud:** Es un contador de la longitud de la lista.
 
 **Método Insertar:**
+
 ![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/9cfe9f76-28de-4a85-9cd0-b7f173cb5ef0)
 
 
