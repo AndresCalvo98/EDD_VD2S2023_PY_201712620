@@ -1,11 +1,11 @@
 
 #  EDD_VD2S2023_PY_201712620
-# Práctica 1 - Lenguajes Formales y de Programación  
+# Proyecto Fase 2 - Estructuras de Datos 
 
 ### Universidad de San Carlos de Guatemala
 ### Facultad de Ingeniería
 ### Escuela de Ciencias y Sistemas
-### Lenguajes Formales y de Programación
+### Estructuras de Datos
 
 <img src='https://user-images.githubusercontent.com/36779113/128587817-1a6c2fdc-d106-4dd3-b092-104c8299bded.png' background='white'>
 
@@ -13,14 +13,12 @@
 > - Luis Andres Calvo Arreaga         201712620
 
 # Manual de Usuario
-## Esta es la **pagina de Inicio de sesion** en la cual tendremos 2 opciones: 
-**1. Iniciar Sesion**
+## La siguiente aplicacion cuenta con una pagina de inicio de sesion como punto de partida que se ve de la siguiente manera:
 
-**2. Salir del programa**
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/c83d6d0f-7e63-42e4-8da1-521d83f19751)
 
-![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/a5e1ca94-7140-4e97-bc53-5c3ab25e8d97)
 
-## En este programa podremos ingresar de 2 formas;
+## En este programa podremos ingresar de 3 maneras diferentes;
 
 **1. Administrador:** se ingresa con un **Usuario** y **Contraseña** especifica para el Administrador.
 
@@ -28,86 +26,175 @@
 
 **Contraseña: Admin**
 
-![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/7d67b7c9-0d0e-417a-bedc-df367ee3b878)
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/1326792e-e72c-4079-95b6-52734f9c9094)
 
 
-**2. Estudiante:** basta con que el **Administrador** haya cargado un archivo de estudiantes (para que el estudiante pueda ingresar con su carne en el **Usuario** y **Contraseña**
+**2. Tutor:** basta con que el **Administrador** haya cargado un archivo de Tutores (para que el Tutor pueda ingresar con su carne en el **Usuario** y su **Contraseña** asignada.
 
 Ej. 
-**Usuario: 201712620**
+**Usuario: 202000869**
 
-**Contraseña: 201712620**
+**Contraseña: alan123**
 
-![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/c0ccf09d-8673-4b70-9974-45f6739b3523)
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/e3a40b59-4bee-45b0-8401-5729bcef4415)
+
+Tambien hay que tomar en cuenta darle click en el boton de Tutor para poder ingresar de esta forma.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/84dfdfa1-ec24-4ba5-898e-d9f57e4e8df8)
+
+**2. Estudiante:** basta con que el **Administrador** haya cargado un archivo de estudiantes (para que el Tutor pueda ingresar con su carne en el **Usuario** y su **Contraseña** asignada.
+
+Ej. 
+**Usuario: 200715321**
+
+**Contraseña: 2007**
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/d4fd676b-7497-4086-afac-8deed8fb4e14)
+
 
 ## Pagina principal Administrador
 
-![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/1b51ee95-fe5f-4946-a5cc-508628c852bf)
-
-En esta parte contaremos con 6 **opciones**:
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/9d309b2f-50f2-453e-a279-31223281630d)
 
 
-**1. Carga de Tutores Académicos:** Mediante esta parte, el
-administrador podrá realizar una carga de estudiantes que necesiten servicio
-como tutores académicos que estarán el sistema, para este será en archivo con extensión .csv
-
-![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/fd412084-9431-46ae-8572-9d1e648660b6)
+En esta parte contaremos con 5 **opciones**:
 
 
-**2. Carga de Estudiantes** Mediante esta parte, el administrador podrá realizar una carga de tutores  académicos con sus cursos y sus respectivas notas para aprobarlos o no y agregarlos en el sistema, para este será en archivo con extensión .csv
+**1. Carga de Archivos:** En esta seccion podremos visualizar la siguiente pantalla;
 
-![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/d130cf1b-af25-425f-afa2-a267113c052e)
-
-
-**3. Carga de Cursos:** El administrador tendrá una sección donde hará la carga de los cursos del área profesional, el archivo json.
-**4. Esta sección el administrador podrá gestionar a los estudiantes que
-desean ser parte del equipo de tutores, donde se evaluará aptitudes,
-calificaciones personales como auxiliares de curso en su historial.
-
-![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/c1ecdc79-19ed-44b9-ba8b-c6a22c3cad8a)
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/d66b1cc0-9a35-48a8-a3cd-e2c2d6063a36)
 
 
-**4. Control de Estudiantes Tutores:** El administrador tendrá esta seccion donde se le despliegaran los tutores con su nombre, carne, nota y curso y el administrador ira aceptando o rechazando a los tutores con **1** y **2**.
-tambien nos muestra un poco de la informacion del siguiente tutor.
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/54917c69-184d-4441-8ad6-739d2e72fbda)
 
-![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/8a5f50ef-bf13-4a1b-a4d0-30f8fda90261)
+Mediante esta, el administrador podrá realizar una carga tanto de estudiantes que necesiten servicio como tutores académicos que estarán el sistema y los respectivos cursos con su debida informacion. Para este será en archivo con extensión .csv y .json
 
-**5. Reportes:** Despliega un nuevo menu para mostrar los distintos tipos de reportes que hay.
+Cada carga tiene su boton de **Elegir archivo** que si lo presionamos nos abrira un explorador de archivos para cargar lo que deseemos con su respectiva extension.
 
-![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/59e583c8-4933-4459-8c9e-effdb3fe5b83)
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/08ee38fe-dc37-445e-ad2e-215a05e89424)
 
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/fb9c59cf-fda9-4dab-bebf-07e02abef7f8)
+
+Y por ultimo veremos un boton de **regresar** que nos llevara de nuevo a la pagina principal.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/8db4ea2e-46ad-44a6-ac83-9c46780e2ccf)
+
+
+**2. Ver Alumnos:** Mediante esta parte, el administrador podrá verificar cuales fueron los alumnos ingresados con el archivo de Estudiantes y se desglosaran en forma de tabla Hash mostrando la siguiente informacion; **Numero, Posicion, Carnet y Password debidamente encriptada**.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/299a0ab5-820b-4381-b49c-e808028bb93b)
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/38cb3613-3e09-4dc6-b386-41a7f010c60c)
+
+Tambien contara con un Boton de regresar para volver a la pagina principal.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/5516d573-31bf-4ce1-bc91-f944f984cb60)
+
+
+**3. Ver Libros:** la parte de ver libros nos llevara a una interfaz grafica que se ve la siguiente manera;
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/baa32ab7-dfd3-4510-b81c-cc1b61f23136)
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/75906cb0-9657-4fea-94b1-9cd97d8fa44b)
+
+En esta podremos visualizar 3 Botones principales y una lista en la cual buscar y elegir un libro.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/d33e4ec5-2c94-428d-8637-422fbb352e26)
+
+Una vez haya disponible un libro el Administrador podra aceptar o rechazar el mismo para su posible publicacion.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/c36ac14b-42f1-4cce-8b58-67cea1e4eb3f)
+
+**Rechazar:** se rechaza el libro elegido.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/e368ffe1-9c26-43ec-bda9-970eb3178be9)
+
+**Aceptar:** se acepta el libro elegido.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/337ca149-3a1b-4b87-a049-644dcef0e326)
+
+
+**Finalizar:** El botón de finalizar, hará que el sistema cree el árbol de merkle final para su posterior reporte.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/cb49e2f3-c19a-422c-be2b-686ea92fdc05)
+
+y por ultimo su respectivo boton de **salir** para regresar a la pagina principal.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/d6b7083a-a4a8-4411-8051-72ebe0a692d3)
+
+**4. Reportes:** Despliega un nuevo menu para mostrar los distintos tipos de reportes que hay.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/08d4ef48-a0c1-4367-b703-9a7a050bd8fd)
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/9173ed13-52ff-486f-9718-176a78d3f270)
+
+**Arbol B:** Este despliegara en la misma pagina el grafo de un **Arbol B** sobre los tutores disponibles.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/d08a3677-0f24-4926-b607-f3890b1a65dc)
+
+**Grafo:** Este nos mostrara nuevamente en la misma pagina el **Grafo dirigido** sobre los cursos y sus jerarquias.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/cf83cd72-0165-41c9-8f31-0fa4fdf3d04c)
+
+**Arbol Merkle:** Con este podremos hacer que nos muestre el Arbol Merkle sobre los libros aceptados y rechazados al estilo Blockchain.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/d1602c41-7848-4af3-83f1-4ff8cbac8e6d)
+
+
+Por ultimo encontraremos el boton de salir.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/3504c2e4-5fa1-439c-bbd9-cde0dbb754ef)
 
 **6. Salir:** esta opcion sale del login que tuvo con el Administrador y nos redirige a la pagina de iniciar sesion.
 
-![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/bbbed7b6-4b0a-463b-9a0b-3d493125cf04)
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/b029a1f9-2a98-4869-9566-0a897511785c)
 
-## Menu Reportes 
-![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/eced4f9e-0084-4ff1-8ea1-a767c27ab6c2)
+## Pagina principal Tutor
 
-**1. Reporte de Alumnos:** Despliega una JPG de un grafo de la **lista enlazada simple** que se creo de la carga del archivo de **estudiantes**.
+La Pagina principal de Tutor tendra una vista de la suiguiente manera;
 
-**2. Reporte de Tutores Aceptados:** Despliega una JPG de un grafo de la **lista enlazada circular** que se creo de la carga del archivo de **Tutores**.
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/ecb545c6-126a-441c-8873-16016cc8012d)
 
-**3. Reporte Asignaciones:** Despliega una JPG  de un grafo de la **matriz dispersa** que se creo de la asignacion de tutores a los cursos y de la asignacion de Estudiantes a dichos cursos.
+El **boton publicacion** nos movera a la siguiente interfaz;
 
-**4. Reporte de Cursos:** Despliega una JPG de un grafo del **Arbol AVL** que se creo de la carga del archivo de **Tutores**.
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/f05b26ed-2a13-4dee-a5d9-8a77d9fce34a)
 
-**5. Salir:** Nos Redirige a la **pagina principal** de **administrador**
+Nos mostrara un Textbox en el cual podremos colocar algun texto para luego darle al boton de publicar y hacer la peticion en dado caso queremos publicar un libro.
 
-## Menu Ingreso como Estudiante
 
-![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/73efe071-ecea-41f3-ae36-4b5fef6d0a41)
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/4fdd6d96-fd67-4b6b-a1c0-c525bc9ce028)
 
-**1. Ver Tutores Disponibles:** Este nos despliegara la lista de cursos que tiene a sus respectivos Tutores.
+Si quisieramos que la publicacion llevara algun libro o archivo, podemos darle en la parte de PDFs para regresar a la pagina anterior y subir el archivo desde el boton de **Elegir Archivo** para que nos muestre el mismo en la interfaz presente y posteriormente hacer la publicacion de la misma manera.
 
-![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/856ff7ee-431e-4194-8b27-6d7c30847090)
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/9f6875d5-09bb-48b5-b09b-35ff917bf9da)
 
-**2. Asignarse Tutores:** Esta opcion nos pedira que ingresemos el codigo del curso al cual queremos asignarnos.
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/536635b0-3918-4192-96ee-fb676de4ca5b)
 
-![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/9d534500-101f-496a-8bcf-0f3157c821b7)
+Por ultimo nos encotraremos con el Boton de **Cerrar Sesion** para poder regresar a la pagina de **inicio de sesion**.
 
-**2. Salir:** Nos redirige a la pagina de **Iniciar Sesion**.
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/9c91f59f-7fa2-426c-8f8c-f7c02d89a9ce)
 
+## Pagina principal Estudiante
+
+Esta seccion nos mostrara la siguiente interfaz grafica;
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/b98ce39d-fa27-4461-9a7f-44773cc32aab)
+
+En el boton de **Ver Libros** podremos visualizar los libros publicados y aceptados por el tutor y administrador.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/ed9f5099-3381-49b8-9208-47801437244b)
+
+El boton de **Ver Publicaciones** nos podremos encontrar con las publicaciones que ha hecho el TUtor en su respectivo curso.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/3bf5c9e2-9f07-4cb2-8911-2ceafd283eb6)
+
+El boton **Principal** nos devuelve a la pagina principal de Estudiante.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/2c0d54dd-19cc-48bc-a5b8-ae07f6955884)
+
+y por ultimo el Boton de **Salir** no envia a la pagina de iniciar sesion nuevamente.
+
+![image](https://github.com/AndresCalvo98/EDD_VD2S2023_PY_201712620/assets/66381259/0264cd9d-85ed-4634-92e5-95711ec42a66)
 
 
 # Manual Tecnico
